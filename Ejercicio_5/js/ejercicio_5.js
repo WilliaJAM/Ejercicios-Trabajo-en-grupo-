@@ -47,7 +47,7 @@ const ventasTXT2 = document.createElement('h3')
 ventasTXT2.innerHTML=`Ventas de la ${inventarios[1].nombre} : ${inventarios[1].ventas}`;
 document.body.appendChild(ventasTXT2)
 
-
+//conteo de las ventas
 function ventas1() {
     inventarios[0].ventas++;
     ventasTXT.innerHTML=`Ventas de la ${inventarios[0].nombre} : ${inventarios[0].ventas}`;
@@ -70,7 +70,7 @@ function notificarBodega1(index, valor) {
         }
     }
 }
-
+//descuenta la cantidad de las bodegas
 function descontarBodega(valor) {
 const input = document.getElementById('cantidad').value;
 const cantidad = document.getElementById('cantidadPor').value;
@@ -84,7 +84,7 @@ if(multiplicacion > valor.arroz){
     ventas1();
 }
 }
-
+//alert si esta por la mitad
 function notificarBodega2(index ,valor) {
 
     if (index == 1) {
