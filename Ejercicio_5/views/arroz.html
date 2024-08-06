@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./arroz.css">
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1446/PNG/512/22333sheafofrice_98735.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Venta de arroz</title>
+</head>
+<body class="body">
+  <div class="contenido">
+    <div class="selector">
+      <h1>Venta de arroz</h1>
+      <label for="bodega">Sellecione bodega</label>
+      <select class="form-select" aria-label="Default select example"id="bodega">
+  
+        </select>
+    </div>
+    <div class="inputCantidad">
+      <label for="cantidad">Cantidad</label>
+      <select class="form-select" aria-label="Default select example"id="cantidad">
+        <option value="250">Gramos</option>
+        <option value="500">Libra</option>
+        <option value="1000">Kilo</option>
+      </select>
+    </div>
+    <div class="inputCuanto">
+      <label for="cantidadPor">Cuanto</label>
+      <input class="form-control" type="number" placeholder="Cantidad" aria-label="default input example" id="cantidadPor"> 
+    </div>
+    <div class="boton">
+      <button type="button" class="btn btn-primary" onclick="vender()">Comprar</button>
+    </div>
+    <h2>Cantidad restante de las bodegas</h2>
+    <div class="text">
+      <h4 id="header"></h4>
+      <h4 id="header2"></h4>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="./arroz.js"></script>
+</html>
