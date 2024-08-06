@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura de Agua</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Calculadora de Factura de Agua</h1>
+
+        <div class="form-group">
+            <label for="estrato">Estrato:</label>
+            <select id="estrato" class="form-control">
+                <option value="1200">Estrato 1</option>
+                <option value="2300">Estrato 2</option>
+                <option value="3200">Estrato 3</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="metrosCubicos">Consumo en metros cúbicos:</label>
+            <input type="number" id="metrosCubicos" class="form-control" placeholder="Ingrese el consumo en metros cúbicos">
+        </div>
+
+        <button onclick="calcularFactura()" class="btn btn-primary">Calcular Factura</button>
+
+        <h2 class="mt-4">Detalles de la Factura</h2>
+        <table class="table table-bordered mt-3">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Estrato</th>
+                    <th>Consumo (m³)</th>
+                    <th>Subtotal</th>
+                    <th>Recargo</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="tablaFactura">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
